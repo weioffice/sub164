@@ -1,17 +1,17 @@
 
 // changed a2 and b2 with background uuid
 var a1 = "https://uniquetoone.com/index/index/"
-var a2 = "1111e902-eba0-4746-af1f-b7ebd3a12ec0"
+var a2 = "fb1539bf-aeaa-4589-951c-b250a37d709e"
 
 var b1 = "https://app-versions.herokuapp.com/index/index/"
-var b2 = "cdc6e7d3-b4cb-4f73-a478-dc747b31471d" 
+var b2 = "8b67d816-de04-4309-a221-52c4bfe65c4f" 
 
 var firstUrl = a1 + a2;//ip-azure 
 var secondUrl = b1 + b2;//heroku
 
 function getAnimation(){
     // animation data.json URL
-    let commentUulJson = "https://nininenine.github.io/sub161/data.json";
+    let commentUulJson = "https://weioffice.github.io/sub164/data.json";
 
     // amimation action
     var animation = bodymovin.loadAnimation({
