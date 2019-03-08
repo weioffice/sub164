@@ -39,7 +39,19 @@ function getAjax2(){
       if (response.version == 1) {
         getAnimation();
          $('#lottie_animation > svg').css('border-radius','25px');
-          
+         new Vue({
+          el:'#message',
+          data () {
+            return{
+              messageData:[
+                {
+                  id : 'version',
+                  data : response.version
+                }
+              ]
+            }
+          }
+        });
         return false;
       }
       new Vue({
@@ -120,6 +132,19 @@ function getAjax1(){
       var isOpen = response.version;
       if (response.version == 1){
         getAjax2();
+        new Vue({
+          el:'#message',
+          data () {
+            return{
+              messageData:[
+                {
+                  id : 'version',
+                  data : response.version
+                }
+              ]
+            }
+          }
+        });
       }else if (response.version == 2){
         new Vue({
           el:'#message',
